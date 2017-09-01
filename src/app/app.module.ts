@@ -6,12 +6,16 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BookmarkComponent } from './modelo/bookmark/bookmark.component';
+import { BookmarksListComponent } from './bookmarks-list/bookmarks-list.component';
+import { BookmarksComponent } from './bookmarks-list/bookmarks/bookmarks.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    BookmarkComponent
+    BookmarkComponent,
+    BookmarksListComponent,
+    BookmarksComponent
   ],
   imports: [
     BrowserModule,
