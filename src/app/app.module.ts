@@ -5,22 +5,29 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { BookmarkComponent } from './modelo/bookmark/bookmark.component';
 import { BookmarksListComponent } from './bookmarks-list/bookmarks-list.component';
 import { BookmarksComponent } from './bookmarks-list/bookmarks/bookmarks.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+
+import {routes} from './app.routes';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    BookmarkComponent,
+    NavbarComponent,    
     BookmarksListComponent,
-    BookmarksComponent
+    BookmarksComponent,
+    AboutComponent,
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routes
   ],
   providers: [],
   bootstrap: [AppComponent]
